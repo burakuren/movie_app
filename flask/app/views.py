@@ -1,6 +1,8 @@
+from crypt import methods
+from datetime import date
 from app import app
 import flask
-from flask import render_template
+from flask import render_template,request
 
 @app.route("/")
 def hello():
