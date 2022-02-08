@@ -18,5 +18,7 @@ def home():
 
 @app.route("/emosea")
 def emosea():
-    return "<h1>AL EMO AĞLADIN AM</h1>"
+    response = flask.Response(render_template("emosea.html"))
+    response.headers["Server"] = "WebServer"
+    return response
 
